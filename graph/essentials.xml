@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<graph>
+
+	<description>
+
+	The essentials Pallet
+
+	</description>
+
+	<copyright>
+	Copyright (c) 2006 - 2019 Teradata
+	All rights reserved. Stacki(r) v5.x stacki.com
+	https://github.com/Teradata/stacki/blob/master/LICENSE.txt
+	</copyright>
+
+
+	<edge from="base" to="essentials-base" />
+	<edge from="server" to="essentials-server" />
+	<edge from="client" to="essentials-client" />
+
+	<!-- Add ordering of edges here. This defines
+	     the order in which the node XML files
+	     are run -->
+	<!--
+	     For example, to run the post section in essentials-base
+	     after the resolv.xml from the stacki pallet, use the
+	     following directive
+	     <order head="resolv" tail="essentials-base" />
+	-->
+</graph>
